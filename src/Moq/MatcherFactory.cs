@@ -97,12 +97,12 @@ namespace Moq
 				{
 					if (!parameter.ParameterType.IsAssignableFrom(convertExpression.Operand.Type) && convertExpression.Operand.IsMatch(out _))
 					{
-						throw new ArgumentException(
-							string.Format(
-								Resources.ArgumentMatcherWillNeverMatch,
-								convertExpression.Operand.ToStringFixed(),
-								convertExpression.Operand.Type.GetFormattedName(),
-								parameter.ParameterType.GetFormattedName()));
+						//throw new ArgumentException(
+						//	string.Format(
+						//		Resources.ArgumentMatcherWillNeverMatch,
+						//		convertExpression.Operand.ToStringFixed(),
+						//		convertExpression.Operand.Type.GetFormattedName(),
+						//		parameter.ParameterType.GetFormattedName()));
 					}
 				}
 			}
